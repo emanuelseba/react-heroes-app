@@ -18,7 +18,7 @@ export const LoginScreen = () => {
     
     dispatch(action);
 
-    const lastPath = localStorage.getItem('lastPath') || '/';
+    const lastPath = localStorage.getItem('lastPath') || process.env.PUBLIC_URL+'/';
 
     navigate(lastPath, {
       replace:true

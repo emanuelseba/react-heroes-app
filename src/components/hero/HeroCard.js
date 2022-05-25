@@ -5,14 +5,15 @@ import { heroImages } from "../../helpers/heroImages";
 
 export const HeroCard = ({ id, superhero, publisher, alter_ego, first_appearance, characters }) => {
     //const imagePath = `${process.env.PUBLIC_URL}/assets/heroes/${id}.jpg`;
+    const imagePath = process.env.PUBLIC_URL+heroImages(`./${id}.jpg`);
+    const link = process.env.PUBLIC_URL+`/hero/${id}`;
     return (
         <div className="col animate__animated animate__fadeIn">
             <div className="card">
                 <div className="row no-gutters">
                     <div className="col-md-4">
                         <img 
-                        // src={imagePath} 
-                        src={heroImages(`./${id}.jpg`)}
+                        src={imagePath} 
                         className="card-img-top" alt={superhero} />
                     </div>
                     <div className="col-md-8">
@@ -26,7 +27,7 @@ export const HeroCard = ({ id, superhero, publisher, alter_ego, first_appearance
                                 <p className="card-text">
                                     <small className="text-muted">{first_appearance}</small>
                                 </p>
-                                <Link to={`/hero/${id}`} >
+                                <Link to={link} >
                                     Mas...
                                 </Link>
                         </div>

@@ -26,18 +26,18 @@ export const HeroScreen = () => {
     }
 
     if (!hero) {
-        return <Navigate to='/' />
+        return <Navigate to={process.env.PUBLIC_URL +'/'} />
     }
 
 
     //const imagePath = `${process.env.PUBLIC_URL}/assets/heroes/${id}.jpg`;
+    const imagePath = process.env.PUBLIC_URL+heroImages(`./${id}.jpg`);
 
     return (
         <div className="row mt-5">
             <div className="col-4">
                 <img className="img-thumbnail animate__animated animate__fadeInLeft" 
-                // src={imagePath} 
-                src={heroImages(`./${id}.jpg`)}
+                src={imagePath} 
                 alt={superhero} />
             </div>
 
