@@ -8,5 +8,5 @@ export const PrivateRoute = ({ children}) => {
    
     localStorage.setItem('lastPath',pathname+search);
 
-    return user.logged ?  children : <Navigate to='/react-heroes-app/login' />
+    return user.logged ?  children : <Navigate to='/login' />
 }
