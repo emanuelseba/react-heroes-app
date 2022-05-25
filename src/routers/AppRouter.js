@@ -10,7 +10,7 @@ export const AppRouter = () => {
         <div>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/login" element={
+                    <Route path="/react-heroes-app/login" element={
                             <PublicRouter>
                                 <LoginScreen />
                             </PublicRouter>

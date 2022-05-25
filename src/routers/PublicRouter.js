@@ -5,6 +5,6 @@ import { AuthContext } from "../auth/authContext";
 export const PublicRouter = ({children}) => {
     const {user} = useContext(AuthContext);
     return user.logged 
-    ?  <Navigate to='/' /> 
+    ?  <Navigate to='react-heroes-app/' /> 
     : children
 }

@@ -37,7 +37,7 @@ export const HeroScreen = () => {
             <div className="col-4">
                 <img className="img-thumbnail animate__animated animate__fadeInLeft" 
                 // src={imagePath} 
-                src={heroImages(`./${id}.jpg`)}
+                src={'react-heroes-app/'+heroImages(`./${id}.jpg`)}
                 alt={superhero} />
             </div>
 

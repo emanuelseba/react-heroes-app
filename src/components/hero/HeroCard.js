@@ -12,7 +12,7 @@ export const HeroCard = ({ id, superhero, publisher, alter_ego, first_appearance
                     <div className="col-md-4">
                         <img 
                         // src={imagePath} 
-                        src={heroImages(`./${id}.jpg`)}
+                        src={'react-heroes-app'/heroImages(`./${id}.jpg`)}
                         className="card-img-top" alt={superhero} />
                     </div>
                     <div className="col-md-8">
@@ -26,7 +26,7 @@ export const HeroCard = ({ id, superhero, publisher, alter_ego, first_appearance
                                 <p className="card-text">
                                     <small className="text-muted">{first_appearance}</small>
                                 </p>
-                                <Link to={`/hero/${id}`} >
+                                <Link to={`/react-heroes-app/hero/${id}`} >
                                     Mas...
                                 </Link>
                         </div>

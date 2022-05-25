@@ -13,11 +13,11 @@ export const DashboardRoutes = () => {
             <div className='container'>
 
                 <Routes>
-                    <Route path="marvel" element={<MarvelScreen />} />
-                    <Route path="dc" element={<DcScreen />} />
-                    <Route path="search" element={<SearchScreen />} />
-                    <Route path="hero/:heroeId" element={<HeroScreen />} />
-                    <Route path="/" element={<MarvelScreen />} />
+                    <Route path="react-heroes-app/marvel" element={<MarvelScreen />} />
+                    <Route path="react-heroes-app/dc" element={<DcScreen />} />
+                    <Route path="react-heroes-app/search" element={<SearchScreen />} />
+                    <Route path="react-heroes-app/hero/:heroeId" element={<HeroScreen />} />
+                    <Route path="react-heroes-app/" element={<MarvelScreen />} />
                 </Routes>
 
             </div>
