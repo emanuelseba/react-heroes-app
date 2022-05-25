@@ -13,11 +13,11 @@ export const DashboardRoutes = () => {
             <div className='container'>
 
                 <Routes>
-                    <Route path={process.env.PUBLIC_URL+"marvel"} element={<MarvelScreen />} />
-                    <Route path={process.env.PUBLIC_URL+"dc"} element={<DcScreen />} />
-                    <Route path={process.env.PUBLIC_URL+"search"} element={<SearchScreen />} />
-                    <Route path={process.env.PUBLIC_URL+"hero/:heroeId"} element={<HeroScreen />} />
-                    <Route path={process.env.PUBLIC_URL+"/"} element={<MarvelScreen />} />
+                    <Route path={"marvel"} element={<MarvelScreen />} />
+                    <Route path={"dc"} element={<DcScreen />} />
+                    <Route path={"search"} element={<SearchScreen />} />
+                    <Route path={"hero/:heroeId"} element={<HeroScreen />} />
+                    <Route path={"/"} element={<MarvelScreen />} />
                 </Routes>
 
             </div>

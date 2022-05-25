@@ -14,7 +14,7 @@ export const Navbar = () => {
 
         dispatch({type: types.logout});
 
-        navigate(process.env.PUBLIC_URL+'/login',{
+        navigate('./login',{
             replace:true
         });
     }
@@ -24,7 +24,7 @@ export const Navbar = () => {
 
             <Link
                 className="navbar-brand"
-                to={process.env.PUBLIC_URL+"/"}
+                to={"./"}
             >
                 Asociaciones
             </Link>
@@ -34,21 +34,21 @@ export const Navbar = () => {
 
                     <NavLink
                         className={({ isActive }) => 'nav-item nav-link ' + (isActive ? 'active' : '')}
-                        to={process.env.PUBLIC_URL+"/marvel"}
+                        to={"./marvel"}
                     >
                         Marvel
                     </NavLink>
 
                     <NavLink
                         className={({ isActive }) => 'nav-item nav-link ' + (isActive ? 'active' : '')}
-                        to={process.env.PUBLIC_URL+"/dc"}
+                        to={"./dc"}
                     >
                         DC
                     </NavLink>
 
                     <NavLink
                         className={({ isActive }) => 'nav-item nav-link ' + (isActive ? 'active' : '')}
-                        to={process.env.PUBLIC_URL+"/search"}
+                        to={"./search"}
                     >
                         Search
                     </NavLink>

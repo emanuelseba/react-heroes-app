@@ -10,13 +10,13 @@ export const AppRouter = () => {
         <div>
             <BrowserRouter>
                 <Routes>
-                    <Route path={process.env.PUBLIC_URL+"/login"} element={
+                    <Route path={"/login"} element={
                             <PublicRouter>
                                 <LoginScreen />
                             </PublicRouter>
                         } />
 
-                    <Route path={process.env.PUBLIC_URL+'/*'} element={
+                    <Route path={'/*'} element={
                             <PrivateRoute >
                                 <DashboardRoutes />
                             </PrivateRoute>

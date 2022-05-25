@@ -5,8 +5,8 @@ import { heroImages } from "../../helpers/heroImages";
 
 export const HeroCard = ({ id, superhero, publisher, alter_ego, first_appearance, characters }) => {
     //const imagePath = `${process.env.PUBLIC_URL}/assets/heroes/${id}.jpg`;
-    const imagePath = process.env.PUBLIC_URL+heroImages(`./${id}.jpg`);
-    const link = process.env.PUBLIC_URL+`/hero/${id}`;
+    const imagePath = '.'+heroImages(`./${id}.jpg`);
+    const link = `./hero/${id}`;
     return (
         <div className="col animate__animated animate__fadeIn">
             <div className="card">

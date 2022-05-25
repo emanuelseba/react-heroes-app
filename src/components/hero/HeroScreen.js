@@ -26,12 +26,12 @@ export const HeroScreen = () => {
     }
 
     if (!hero) {
-        return <Navigate to={process.env.PUBLIC_URL +'/'} />
+        return <Navigate to={'./'} />
     }
 
 
     //const imagePath = `${process.env.PUBLIC_URL}/assets/heroes/${id}.jpg`;
-    const imagePath = process.env.PUBLIC_URL+heroImages(`./${id}.jpg`);
+    const imagePath = '.'+heroImages(`./${id}.jpg`);
 
     return (
         <div className="row mt-5">
